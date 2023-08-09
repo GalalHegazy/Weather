@@ -1,0 +1,86 @@
+body{
+    font-family: 'Playfair Display', serif;
+}
+.background{
+    background-image: url(../img/lightning-1056419_1280.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+.layout{
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.navbar-brand{
+    text-shadow: 0 0 3px #ffffff;
+
+}
+.img-log{
+    width: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+.line-img::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 75%;
+    right: 0;
+    background-color: #198754;
+    border-radius: 50px;
+}
+.nav-btn{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+.section{
+    margin-top: 200px;
+}
+.shadow-lg{
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.295);
+}
+
+.search{
+    outline: none;
+    border: none;
+    border-radius: 15px;
+
+}
+#btn-send{
+    border-radius: 15px;
+    right: 2px;
+    width:25%;
+    top: 1px;
+
+}
+.degree{
+    font-size: 100px;
+}
+.footer{
+    height: 70px;
+}
+.footer-text{
+    font-size: 15px;
+    padding: 15px;
+}
+.cont-icon .cont-items {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 0 3px #198754;
+    transition: all 500ms ease;
+}
+
+.cont-items:hover {
+    box-shadow: 0 0 0 4px #cde1f8;
+    background-color: #198754;
+    color: white;
+    cursor: pointer;
+}
+/* ======================================contact=================================== */
+.section-contact{
+    margin-top: 200px;
+
+}
+.input-form{
+    outline: none;
+    border-radius: 20px;
+    border: none;
+}

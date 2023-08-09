@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&family=Playfair+Display:wght@500&display=swap"
+    rel="stylesheet">
+  <link href="./img/Weather-Chance-Of-Storm-icon.png" rel="icon">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="background">
+    <div class=" layout w-100 h-100 overflow-auto">
+      <nav class="navbar navbar-dark pt-4 fixed-top bg-transparent">
+        <div class="container">
+          <div class="d-flex home-logo">
+            <img src="./img/pngfind.com-storm-png-716056.png " class="img-log p-2 rounded-5 bg-success">
+            <a class="navbar-brand fw-lighter ms-1 fs-3 text-white" href="#"> Weather ?</a>
+          </div>
+          <button class="navbar-toggler nav-btn " type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+
+          <div class="offcanvas offcanvas-end text-bg-dark " tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+
+
+            <div class="offcanvas-header">
+
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Weather ?</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="d-flex flex-column justify-content-between h-100">
+              <div class="offcanvas-body ">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">News</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Live cameras</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Photos</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Enter your email to subscribe..."
+                    aria-label="Search">
+                  <button class="btn btn-success" type="submit">Subscribe</button>
+                </form>
+
+              </div>
+              <div class="footer  d-flex flex-column justify-content-center align-items-center ">
+
+                <div class="cont-icon w-75 d-flex justify-content-evenly ">
+                  <div class="cont-items d-flex justify-content-center align-items-center  rounded-circle fs-5 ">
+                    <i class="fa-brands fa-facebook"></i>
+                  </div>
+                  <div class="cont-items d-flex justify-content-center align-items-center  rounded-circle fs-5 ">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div class="cont-items d-flex justify-content-center align-items-center  rounded-circle fs-5 ">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="cont-items d-flex justify-content-center align-items-center  rounded-circle fs-5 ">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </div>
+                </div>
+                <p class="footer-text text-center">Copyright 2023 Company name. Designed by HAGZR. All rights reserved
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </nav>
+      <div class="container section">
+        <div class="row">
+        <div class="position-relative col-md-5">
+          <input id="search-country" type="text" placeholder="Find your location..." class=" search w-100  p-2 ">
+          <button id="btn-send" type="submit" class="btn btn-success position-absolute">Find</button>
+        </div>
+      </div>
+        <div id="current_day" class="row d-flex justify-content-between  ">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
